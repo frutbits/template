@@ -1,13 +1,13 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["config:base", "helpers:pinGitHubActionDigests", "group:allNonMajor"],
+	"extends": ["config:base", "helpers:pinGitHubActionDigests", "group:allNonMajor", ":semanticCommits"],
 	"labels": ["dependencies"],
 	"schedule": ["before 6am"],
 	"timezone": "Asia/Jakarta",
-    "docker": {
-        "enabled": true,
-        "rangeStrategy": "bump"
-    },
+	"docker": {
+		"enabled": true,
+		"rangeStrategy": "bump"
+	},
 	"npm": {
 		"rangeStrategy": "bump",
 		"packageRules": [
