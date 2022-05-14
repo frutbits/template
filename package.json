@@ -1,6 +1,6 @@
 {
   "name": "template",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A repository for Zhycorp's project base",
   "main": "dist/index.js",
   "type": "module",
