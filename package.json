@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "A repository for Zhycorp's project base",
   "main": "dist/index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run lint && npm run compile",
+    "compile": "tsc --build tsconfig.json",
+    "lint": "eslint . --ignore-path .gitignore --ext .ts",
+    "lint:fix": "eslint . --ignore-path .gitignore --ext .ts --fix",
+    "start": "node --experimental-specifier-resolution=node dist/main",
+    "start:dev": "rimraf ./dist && npm run compile && npm start"
   },
   "repository": {
     "type": "git",
@@ -34,6 +40,7 @@
     "@typescript-eslint/eslint-plugin": "^5.23.0",
     "@typescript-eslint/parser": "^5.23.0",
     "eslint": "^8.15.0",
+    "rimraf": "^3.0.2",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.4"
   }
