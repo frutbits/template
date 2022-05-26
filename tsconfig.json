@@ -1,8 +1,8 @@
 {
     "compilerOptions": {
         "target": "ES2021",
-        "module": "ESNext",
-        "moduleResolution": "Node",
+        "module": "ES2022",
+        "moduleResolution": "node",
         "lib": ["ES2021"],
         "strict": true,
         "outDir": "dist",
@@ -18,4 +18,4 @@
     },
     "exclude": [],
     "include": ["src/**/*"]
-  }
+}
