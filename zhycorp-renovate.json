@@ -14,7 +14,7 @@
     "rangeStrategy": "bump"
   },
   "npm": {
-    "rangeStrategy": "update-lockfile",
+    "rangeStrategy": "bump",
     "packageRules": [
       {
         "matchUpdateTypes": ["minor", "patch"],
