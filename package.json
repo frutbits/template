@@ -23,8 +23,8 @@
     "compile": "tsc --build tsconfig.json",
     "lint": "eslint . --ignore-path .gitignore --ext .ts",
     "lint:fix": "npm run lint -- --fix",
-    "start": "node --experimental-specifier-resolution=node dist",
-    "start:dev": "rimraf ./dist && npm run compile && node --experimental-specifier-resolution=node --no-warnings dist"
+    "start": "node dist",
+    "start:dev": "rimraf ./dist && npm run compile && node dist"
   },
   "eslintConfig": {
     "extends": "@hazmi35/eslint-config/typescript",
