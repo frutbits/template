@@ -31,7 +31,7 @@
     "ignorePatterns": "dist/*"
   },
   "devDependencies": {
-    "@hazmi35/eslint-config": "^8.7.1",
+    "@hazmi35/eslint-config": "^10.0.0",
     "@types/node": "^18.19.67",
     "@typescript-eslint/eslint-plugin": "^5.53.0",
     "@typescript-eslint/parser": "^5.53.0",
